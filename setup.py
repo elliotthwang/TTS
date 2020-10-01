@@ -76,7 +76,7 @@ def pip_install(package_name):
     )
 
 
-reqs_from_file = open('requirements.txt').readlines()
+reqs_from_file = open('/content/TTS/requirements.txt').readlines()
 reqs_without_tf = [r for r in reqs_from_file if not r.startswith('tensorflow')]
 tf_req = [r for r in reqs_from_file if r.startswith('tensorflow')]
 
